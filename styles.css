@@ -6,6 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0 15px; /* Add padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
 }
 
 .container {
@@ -15,6 +17,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -40,6 +43,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 button {
@@ -56,4 +60,46 @@ button {
 
 button:hover {
     background-color: #4b6cb7;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .input-group input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 6px;
+        font-size: 12px;
+    }
 }
