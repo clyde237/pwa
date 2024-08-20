@@ -1,0 +1,22 @@
+{
+    "name": "Modern Registration Form",
+    "short_name": "RegForm",
+    "description": "A modern registration form with a sleek design.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6e8efb",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "/icons/l1.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/l2.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
